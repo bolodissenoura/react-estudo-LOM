@@ -1,0 +1,23 @@
+.post {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    text-align: center;
+    transition: transform 100ms ease-in-out;
+}
+
+.post:hover {
+    transform: scale(1.03);
+}
+
+.post-content {
+    padding: 30px;
+}
+
+.photo {
+    max-width: 100px;
+    margin-top: 20px;
+    max-height: 250px;
+    border-radius: 300px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+}
+
