@@ -3,6 +3,7 @@ import { Component } from 'react';
 import { loadPosts } from '../../utils/load-posts'
 import { Posts } from '../../components/Posts';
 import { Button } from '../../components/Button';
+import { TextInput } from '../../components/TextInput';
 
 class Home extends Component {
 
@@ -10,7 +11,7 @@ class Home extends Component {
     posts: [],
     allPosts: [],
     page: 0,
-    postsPerPage: 4,
+    postsPerPage: 9,
     searchValue: ''
   };
 
@@ -62,16 +63,15 @@ class Home extends Component {
 
     return (
       <section className='container'>
+        <h1 className='text-header'>Hello ! <br /> This is a small application to study how the incas and astecas did in the past without React Hooks and stuffs like Axios to consume API.. Enjoy !</h1>
         {!!searchValue && (
           <>
-            <h1>Search value: {searchValue}</h1><br /><br />
+            <h1 className='text-header search-h1'>Search value: {searchValue}</h1><br /><br />
           </>
         )}
-        <input
-          onChange={this.handleChange}
-          value={searchValue}
-          type="search"
-        /> <br /><br /><br />
+
+        <TextInput searchValue={searchValue} handleChange={this.handleChange}/>
+        <br /><br /><br />
 
         <Posts posts={filteredPosts} />
         <div className="button-container">

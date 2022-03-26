@@ -1,9 +1,18 @@
 .container {
     min-height: 1200px;
-    background-color: #eee;
+    background-color: #44475A;
     min-height: 100vh;
     padding: 30px;
     margin: 0 auto;
+}
+
+.text-header{
+    text-align: center;
+    padding-bottom: 40px;
+    color: #BD93F9;
+}
+.search-h1{
+    color: #F1FA8C ;
 }
 
 .button-container {
